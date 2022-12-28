@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 47. Membuat layout untuk recyrcle view Popular Menu -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewHomeModel"
+            type="com.example.kulinerapp.viewModel.HomeviewModel"
+            />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="240dp"
+        android:layout_height="180dp"
+        android:elevation="2dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/img_popular_menu"
+            android:layout_width="240dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/fave_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:text="Ini Menu"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            />
+
+    </androidx.cardview.widget.CardView>
+</layout>

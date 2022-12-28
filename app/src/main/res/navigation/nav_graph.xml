@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeMenuFragment">
+
+    <!-- 3. Membuat Navgraph dan otomatis membuat Fragment.kt -->
+    <fragment
+        android:id="@+id/homeMenuFragment"
+        android:name="com.example.kulinerapp.fragments.HomeMenuFragment"
+        android:label="fragment_home_menu"
+        tools:layout="@layout/fragment_home_menu"/>
+    <fragment
+        android:id="@+id/favoritesMenuFragment"
+        android:name="com.example.kulinerapp.fragments.favoritesMenuFragment"
+        android:label="fragment_favorites_menu"
+        tools:layout="@layout/fragment_favorites_menu" />
+</navigation>
