@@ -62,6 +62,7 @@ class HomeMenuFragment : Fragment() {
     //17. Membuat fungsi OnViewCreated
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        //membuat binding viewHomeModel
         binding.viewHomeModel = viewHomeModel
         binding.lifecycleOwner = viewLifecycleOwner
         //18. Menggunakan Retrofit instance untuk mendapatkan data RadomMeal
@@ -173,17 +174,22 @@ class HomeMenuFragment : Fragment() {
                     .into(binding.randomMeal)
             }
         **/
+
             //39. Mengganti kode diatas menjadi seperti berikut
         viewHomeModel.observeRandomMealLivedata().observe(viewLifecycleOwner
         ) { meal ->
             //implement method onChaged
 
+// 78. Menghapus fungsi glide dibawah kemudian ujicoba aplikasi
+            /**
             Glide.with(this@HomeMenuFragment)
                 //!! artinya notnull
                 .load(meal!!.strMealThumb)
                 .into(binding.imgRandomMeal)
+             **/
             this.randomMeal = meal
         }
+
     }
 }
 

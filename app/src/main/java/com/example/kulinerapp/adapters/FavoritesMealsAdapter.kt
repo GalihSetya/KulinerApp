@@ -7,9 +7,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.kulinerapp.databinding.MealItemBinding
-import com.example.kulinerapp.dataclass.CategoryMeals
 import com.example.kulinerapp.dataclass.Meal
-import com.example.kulinerapp.dataclass.MealList
 
 //72a. Membuat adapter untuk Recycleview Favorite Menu
 class FavoritesMealsAdapter : RecyclerView.Adapter<FavoritesMealsAdapter.FavoritesMealsAdapterViewHolder>() {

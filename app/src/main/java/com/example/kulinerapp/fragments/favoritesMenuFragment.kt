@@ -62,7 +62,7 @@ class favoritesMenuFragment : Fragment() {
             ItemTouchHelper.UP or ItemTouchHelper.DOWN,
             ItemTouchHelper.RIGHT or ItemTouchHelper.LEFT
         ){
-            //74a. Override fungsi diatas
+            //74b. Override fungsi diatas
             //onMove return true
             override fun onMove(
                 recyclerView: RecyclerView,
@@ -85,7 +85,7 @@ class favoritesMenuFragment : Fragment() {
             }
 
         }
-        //panggil fungsi touchelper dan uji aplikasi
+        //74c. panggil fungsi touchelper dan uji aplikasi
         ItemTouchHelper(itemTouchHelper).attachToRecyclerView(binding.rvFavorites)
 
         onFavoriteItemClick()

@@ -78,12 +78,16 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tv_menu_hari_ini">
 
+                    <!-- 77 Menggunakan ekspresi Binding dari Binding adapter yang sudah dibuat-->
+                    <!-- kemudian menuju ke fragment home dan hapus fungsi glide pada observer -->
                     <ImageView
                         android:id="@+id/img_random_meal"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@color/teal_200"
-                        android:scaleType="centerCrop" />
+                        android:scaleType="centerCrop"
+                        app:UrlGambar="@{viewHomeModel.menurandom.strMealThumb}"
+                        />
 
                     <TextView
                         android:id="@+id/nama_menu"

@@ -73,6 +73,9 @@ dependencies {
     //ViewModel Scope
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-alpha02'
 
+    //75. Menambahkan Dependency untuk mencoba menggunakan coil
+    implementation "io.coil-kt:coil:1.1.1"
+
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
